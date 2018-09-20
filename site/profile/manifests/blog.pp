@@ -13,7 +13,9 @@ class profile::blog {
   }
   
   # Install wordpress somewhere that apache can see it
-  
+  class { 'wordpress':
+    install_dir => '/var/www/html',
+  }
   
 
 }
