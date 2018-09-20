@@ -3,6 +3,9 @@ forge 'https://forge.puppet.com'
 mod 'puppetlabs/apache'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/concat'
+mod 'puppetlabs-mysql', '6.1.0'
+mod 'puppetlabs-translate'
+mod 'puppet/staging'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
