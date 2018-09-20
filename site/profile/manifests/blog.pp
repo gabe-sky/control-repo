@@ -7,6 +7,10 @@ class profile::blog {
   include apache::mod::php
   
   # Manage mysql with php bindings
+  include mysql::server
+  class { 'mysql::bindings':
+    php_enable => true,
+  }
   
   # Install wordpress somewhere that apache can see it
   
